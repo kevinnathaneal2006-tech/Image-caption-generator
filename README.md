@@ -1,45 +1,54 @@
 🖼️ Image Caption Generator
-📌 Project Overview
+📌 Overview
 
-This project focuses on generating meaningful captions for images using Deep Learning techniques. The model analyzes the content of an image and produces a natural language description automatically.
+This project is an Image Caption Generator that automatically generates meaningful descriptions for images using Deep Learning. It combines Computer Vision and Natural Language Processing to understand image content and convert it into human-readable text.
 
-🎯 Objective
+✨ Features
+Automatically generates captions for images
+Uses deep learning models for better accuracy
+Supports multiple captions per image during training
+Easy to train and test with new images
+Preprocessing for both images and text
 
-The main objective of this project is to build a model that can understand image features and generate accurate and relevant captions.
+🏗️ Architecture
+The model follows an Encoder-Decoder architecture:
+Encoder (CNN)
+Extracts features from images using a pre-trained model like InceptionV3
+Decoder (LSTM)
+Generates captions word-by-word using extracted features
+Embedding Layer
+Converts words into numerical vectors
+Dense Layer
+Predicts the next word in the sequence
 
-🧠 Methodology
-Used CNN (Convolutional Neural Network) for extracting image features
-Used RNN / LSTM (Recurrent Neural Network) for generating captions
-Combined both models to create an end-to-end image captioning system
-
-📂 Dataset
-
-We used an image-caption dataset where each image is associated with multiple captions.
+📂 Dataset – Flickr8k
+We used the Flickr8k Dataset for training and testing.
 
 Dataset Details:
-Dataset Name: Flickr8k / Flickr30k / MS COCO
-Contains thousands of images with corresponding text descriptions
-Each image has multiple captions for better training
-Preprocessing Steps:
-Resized images to a fixed size
-Normalized pixel values
-Cleaned text data (removed punctuation, lowercasing)
-Tokenized captions
-Created vocabulary and sequences
+Contains 8,000 images
+Each image has 5 different captions
+Captions describe objects, actions, and scenes in images
+Preprocessing:
+Images resized and normalized
+Captions cleaned (lowercase, removed punctuation)
+Tokenization and sequence generation
+Vocabulary creation
 
 ⚙️ Technologies Used
 Python
 TensorFlow / Keras
-NumPy & Pandas
+NumPy
+Pandas
 Matplotlib
 
-🚀 Model Workflow
-Load and preprocess dataset
-Extract image features using CNN (e.g., InceptionV3)
-Process text data and create sequences
-Train LSTM model for caption generation
-Generate captions for new images
+🔄 How It Works
+Load and preprocess the Flickr8k dataset
+Extract image features using CNN
+Convert captions into sequences
+Train LSTM model using image features + text data
+During prediction, model generates caption word-by-word
 
-📊 Evaluation
-Accuracy is measured based on how well the generated caption matches the actual caption
-Metrics like BLEU Score can be used
+🖼️ Example Output
+Input Image: (add your image here)
+Generated Caption:
+👉 "A man is riding a bicycle on the road"
