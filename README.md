@@ -11,6 +11,7 @@ The main objective of this project is to build a model that can understand image
 Used CNN (Convolutional Neural Network) for extracting image features
 Used RNN / LSTM (Recurrent Neural Network) for generating captions
 Combined both models to create an end-to-end image captioning system
+
 📂 Dataset
 
 We used an image-caption dataset where each image is associated with multiple captions.
@@ -25,17 +26,20 @@ Normalized pixel values
 Cleaned text data (removed punctuation, lowercasing)
 Tokenized captions
 Created vocabulary and sequences
+
 ⚙️ Technologies Used
 Python
 TensorFlow / Keras
 NumPy & Pandas
 Matplotlib
+
 🚀 Model Workflow
 Load and preprocess dataset
 Extract image features using CNN (e.g., InceptionV3)
 Process text data and create sequences
 Train LSTM model for caption generation
 Generate captions for new images
+
 📊 Evaluation
 Accuracy is measured based on how well the generated caption matches the actual caption
 Metrics like BLEU Score can be used
