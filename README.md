@@ -1,7 +1,7 @@
 🖼️ Image Caption Generator
 📌 Overview
-
-This project is an Image Caption Generator that automatically generates meaningful descriptions for images using Deep Learning. It combines Computer Vision and Natural Language Processing to understand image content and convert it into human-readable text.
+This project is an Image Caption Generator that automatically generates meaningful descriptions for images using Deep Learning. 
+It combines Computer Vision and Natural Language Processing to understand image content and convert it into human-readable text.
 
 ✨ Features
 Automatically generates captions for images
